@@ -12,6 +12,13 @@ app.get("/" , (resq , res)=>{
 app.get("/hotels" , (req, res)=>{
     res.send(hotels);
 })
+app.get("/hotels/:id" , (req, res)=>{
+     const id = req.params.id;
+     const hotel = hotels.find(hotel => hotel.id == id)
+    res.send(hotel);
+})
+
+
 
 app.listen(port ,()=>{
     console.log("running on por " , port);

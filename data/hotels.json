@@ -10,5 +10,9 @@
     {
         "id":3,
         "name":"hotel 3"
+    },
+    {
+        "id":4,
+        "name":"hotel 4"
     }
 ]
